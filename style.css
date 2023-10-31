@@ -64,7 +64,24 @@ body {
 .hands {
     width: 476px;
     height: 430px;
+    background-image: url("/images/triangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
+}
+
+.scissors {
+    margin-left: 20px;
+}
+
+.paper {
+    margin-right: 20px;
+}
+
+.hands .hand {
+    cursor: pointer;
+    /* transition: ; */
 }

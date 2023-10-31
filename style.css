@@ -23,7 +23,7 @@ body {
 
 .scoreboard {
     width: 700px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 15px;
     margin-top: 50px;
     height: 150px;
@@ -42,8 +42,29 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     border-radius: 10px;
     margin-right: 30px;
+}
+
+.score h1 {
+    color: #565468;
+    font-size: 56px;
+}
+
+.score p {
+    color: #2a45c2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+}
+
+.hands {
+    width: 476px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

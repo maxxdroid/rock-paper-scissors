@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Josefin+Sans:wght@400;700&family=Montserrat:wght@700&family=Plus+Jakarta+Sans:wght@500;700;800&family=Roboto:ital,wght@0,
 100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -27,15 +28,38 @@
 
     <div class="hands">
       <div class="hand paper">
-        <img src="./images/Paper.png" alt="">
+        <img src="./images/Paper.png" alt="" onclick="pickUserHand('paper')">
       </div>
       <div class="hand scissors">
-        <img src="./images/Scissors.png" alt="">
+        <img src="./images/Scissors.png" alt="" onclick="pickUserHand('scisors')">
       </div>
       <div class="hand rock">
-        <img src="./images/Rock.png" alt="">
+        <img src="./images/Rock.png" alt="" onclick="pickUserHand('rock')">
       </div>
     </div>
+
+    <div class="contest">
+      <div class="userHand">
+        <h1>YOU PICKED</h1>
+        <div class="handImageContainer">
+          <img src="./images/Paper.png" alt="">
+        </div>
+      </div>
+
+      <div class="referee">
+        <div class="decision"><h1>YOU WIN</h1></div>
+        <div class="newGame">PLAY AGAIN</div>
+      </div>
+
+      <div class="computerHand">
+        <h1>THE HOUSE PICKED</h1>
+        <div class="handImageContainer">
+          <img src="./images/Scissors.png" alt="">
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </body>
 

@@ -73,6 +73,8 @@ body {
     margin-top: 50px;
 }
 
+
+
 .scissors {
     margin-left: 20px;
 }
@@ -83,5 +85,64 @@ body {
 
 .hands .hand {
     cursor: pointer;
-    /* transition: ; */
+    transition: all 0.25s;
+}
+
+.hands .hand:hover {
+    transform: translate3d(0px, -8px, 0px);
+}
+
+.contest {
+    width: 900px;
+    display: none;
+    margin-top: 50px;
+}
+
+.contest img {
+    width: 275px;
+    height: 275px;
+}
+
+.contest h1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contest .handImageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Targeting each Parent div in the contest div */
+.contest > div {
+    /* Giving them all an importance of 1 meaning same width */
+    flex: 1;
+}
+
+.referee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.referee h1 {
+    font-size: 45px;
+}
+
+.newGame {
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: hsl(229, 25%, 31%);
+    transition: all 0.15s;
+}
+
+.newGame:hover {
+    background-color: bisque;
+    transform: translate3d(0px, -2px, 0px);
 }
